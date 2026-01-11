@@ -2835,7 +2835,7 @@
                 await database.ref('requests/' + requestId).set(requestData);
                 
                 // Step 5: Show success
-                showNotification('تم إرسال الطلب بنجاح! سيتم التواصل معكم عبر البريد الإلكتروني', 'success');
+                showNotification('تم إرسال الطلب بنجاح! سيتم ارسال الباسورد عبر البريد الإلكتروني والواتس المسجل بالطلب', 'success');
                 
                 // Step 6: Reset form and go back to main
                 document.getElementById('requestForm').reset();
@@ -3895,3 +3895,4 @@ ${request.generatedPassword ? `الباسورد: ${request.generatedPassword}` :
 </body>
 
 </html>
+
